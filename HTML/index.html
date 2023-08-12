@@ -6,7 +6,13 @@
     <title>Distribuidora de Alimentos</title>
     <link rel="stylesheet" href="../CSS/index.css">
     <script src="../JS/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Distribuidora de Alimentos</h1>
@@ -19,14 +25,44 @@
             </ul>
         </nav>
     </header>
-
+ 
     <section id="inicio">
-        <h2>Bienvenidos a nuestra distribuidora de alimentos</h2>
-        <p>Servimos alimentos frescos y de alta calidad.</p>
+        <div class="container text-center">
+            <h2>Bienvenidos a nuestra distribuidora de alimentos</h2><br>
+            <h3>No te pierdas los OFERTONES de este mes!!!</h3>
+        </div>
+        
     </section>
-
+    <div class="container text-center">
+        
+        <div class="gallery-container">
+            <div class="gallery">
+                <div>
+                    <img src="../IMG/Productos/arroz.webp" alt="Imagen 1">
+                    <p>ofer6ton</p>
+                </div>
+                <img src="../IMG/Productos/arroz.webp" alt="Imagen 1">
+                <img src="../IMG/Productos/cafe1.jpg" alt="Imagen 2">
+                <img src="../IMG/Productos/fidfeos.jpg" alt="Imagen 3">
+                <img src="../IMG/Productos/fondo.jfif" alt="Imagen 3">
+                
+                <!-- Agrega más imágenes aquí -->
+            </div>
+        </div>
+</div>
     <section id="productos">
-        <h2>Productos</h2>
+<h2>Productos</h2> 
+        <select> 
+            <option>Café</option>
+            <option>Fideos</option>
+            <option>Bimbo</option>
+            <option>Galleta</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
         <input type="text" id="searchInput"> <br>
         <input type="button" id="searchButton" value="Buscar">
         
@@ -47,5 +83,8 @@
         <p>&copy; 2023 Distribuidora de Alimentos. Todos los derechos reservados.</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+crossorigin="anonymous"></script>
 
 </html>

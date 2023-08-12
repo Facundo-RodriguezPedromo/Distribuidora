@@ -1,12 +1,67 @@
 /* Resetear estilos por defecto */
-body, h1, h2, h3, p, ul, li {
+body, h2, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+h1, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic; /* Aplica la cursiva */
+    font-weight: bold;
 }
 
 body {
     font-family: Arial, sans-serif;
 }
+
+
+.gallery-container {
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    animation: slide 10s linear infinite; /* Animación que dura 10 segundos */
+    margin-left: -10px; 
+}
+
+.gallery img {
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.gallery img:last-child {
+    margin-right: 0; /* Quita el margen derecho a la última imagen */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translate(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+        transform: translateX(-0%);
+    }
+
+}
+
 
 header {
     background-color: #333;
@@ -34,13 +89,6 @@ section {
     padding: 50px;
 }
 
-.product {
-    margin-bottom: 30px;
-}
-
-.product img {
-    max-width: 100%;
-}
 
 footer {
     text-align: center;
