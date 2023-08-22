@@ -1,3 +1,17 @@
+/* GAMA DE COLORES 
+
+
+#C200FB
+#EC0868
+#FC2F00
+#EC7D10
+#FFBC0A
+
+*/
+
+
+
+
 /* Resetear estilos por defecto */
 body, h2, p, ul, li {
     margin: 0;
@@ -15,59 +29,56 @@ body {
 }
 
 
-.gallery-container {
-    text-align: center;
-    width: 1000px;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-}
-
-.gallery {
-    display: flex;
-    animation: slide 10s linear infinite; /* Animación que dura 10 segundos */
-    margin-left: -10px; 
-}
-
-.gallery img {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .sectionIMG {
     width: 100%;
-    height:  100%;
+    height: 50vh;
+  }
+  .carousel {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin: auto;
+  }
+  .carousel img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-
-.gallery img:last-child {
-    margin-right: 0; /* Quita el margen derecho a la última imagen */
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translate(-300%);
-    }
-    100% {
-        transform: translateX(-400%);
-        transform: translateX(-0%);
-    }
-
-}
-
+  }
+  .carousel li {
+    flex: 1;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    filter: grayscale(100%);
+    border: 2px solid white;
+    background: black;
+  }
+  .carousel li:hover {
+    filter: grayscale(0);
+    background: lightblue;
+    flex: 4;
+  }
+  .carousel li:not(:hover) img {
+    filter: blur(.5px);
+    opacity: .6;
+  }
 
 header {
-    background-color: #333;
-    color: white;
+    background: linear-gradient(to bottom, #EC7D10, #ffffff);
+    color: rgb(0, 0, 0);
     padding: 10px 0;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav ul {
@@ -81,7 +92,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
